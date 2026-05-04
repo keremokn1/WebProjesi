@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kerem | Özgeçmiş</title>
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+
+  <style>
+    :root {
+      --dark-color: #0f172a;
+      --text-muted-custom: #6b7280;
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: #f8fafc;
+      color: #1f2937;
+    }
+
+    .hero-section {
+      background: linear-gradient(135deg, #0d6efd 0%, #0b5ed7 50%, #0a58ca 100%);
+      color: #fff;
+      border-radius: 1rem;
+    }
+
+    .section-title {
+      font-weight: 700;
+      color: var(--dark-color);
+    }
+
+    .info-card {
+      border: 0;
+      border-radius: 1rem;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+    }
+
+    .custom-muted {
+      color: var(--text-muted-custom);
+    }
+
+    .tag-badge {
+      font-size: 0.8rem;
+      border: 1px solid #dbeafe;
+      background: #eff6ff;
+      color: #1d4ed8;
+    }
+
+    footer {
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Kerem</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+          aria-controls="mainNavbar"
+          aria-expanded="false"
+          aria-label="Menüyü Aç/Kapat"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav flex-column flex-lg-row ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Hakkında</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="ozgecmis.html">Özgeçmiş</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Şehrim</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">İlgi Alanlarım</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">İletişim</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container my-4 my-md-5">
+    <section class="hero-section p-4 p-md-5 mb-4 mb-md-5">
+      <h1 class="display-6 fw-bold mb-3">Özgeçmiş</h1>
+      <p class="mb-0">
+        Bilgisayar Mühendisliği öğrencisi olarak yazılım ve donanım temelli projeler geliştiriyor; analitik
+        düşünme, problem çözme ve modern mühendislik yaklaşımıyla kendimi sürekli ileri taşıyorum.
+      </p>
+    </section>
+
+    <section class="mb-4 mb-md-5" aria-labelledby="education-title">
+      <div class="card info-card">
+        <div class="card-body p-4 p-md-5">
+          <h2 id="education-title" class="section-title h3 mb-3">Eğitim</h2>
+          <article>
+            <h3 class="h5 mb-1">Sakarya Üniversitesi</h3>
+            <p class="custom-muted mb-0">Bilgisayar Mühendisliği</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="projects-title">
+      <h2 id="projects-title" class="section-title h3 mb-3">Projeler ve Yetenekler</h2>
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <article class="card info-card h-100">
+            <div class="card-body p-4">
+              <h3 class="h5 mb-3">Quiz Uygulaması (C# - Windows Forms)</h3>
+              <p class="custom-muted mb-3">
+                C# ve Windows Forms ile geliştirdiğim bu projede soru yönetimi, puanlama ve skor takibi
+                süreçlerini tek bir masaustu uygulamasında topladım.
+              </p>
+              <p class="mb-0">
+                <span class="badge rounded-pill tag-badge me-2">C#</span>
+                <span class="badge rounded-pill tag-badge me-2">Windows Forms</span>
+                <span class="badge rounded-pill tag-badge">Skor Takibi</span>
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-lg-4">
+          <article class="card info-card h-100">
+            <div class="card-body p-4">
+              <h3 class="h5 mb-3">Simülasyon Projesi (Java - Strategy Pattern)</h3>
+              <p class="custom-muted mb-3">
+                Java ile geliştirdiğim simülasyon projesinde Strategy Design Pattern kullanarak davranışların
+                çalışma anında değiştirilebilir olduğu esnek bir mimari kurdum.
+              </p>
+              <p class="mb-0">
+                <span class="badge rounded-pill tag-badge me-2">Java</span>
+                <span class="badge rounded-pill tag-badge me-2">OOP</span>
+                <span class="badge rounded-pill tag-badge">Strategy Pattern</span>
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-lg-4">
+          <article class="card info-card h-100">
+            <div class="card-body p-4">
+              <h3 class="h5 mb-3">Donanım Simülasyonları (Proteus)</h3>
+              <p class="custom-muted mb-3">
+                Proteus ile mantık kapıları ve SRAM bellek genişletme odaklı devreler tasarladım; temel
+                elektronik prensiplerini uygulayarak sistem davranışlarını simüle ettim.
+              </p>
+              <p class="mb-0">
+                <span class="badge rounded-pill tag-badge me-2">Proteus</span>
+                <span class="badge rounded-pill tag-badge me-2">Mantık Kapıları</span>
+                <span class="badge rounded-pill tag-badge">SRAM</span>
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-4 mt-5">
+    <div class="container text-center">
+      <small>&copy; 2026 Kerem - Tüm Hakları Saklıdır.</small>
+    </div>
+  </footer>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+</body>
+</html>
