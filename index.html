@@ -5,83 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kerem | Hakkında</title>
 
-  <!-- Bootstrap 5 CDN -->
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
     crossorigin="anonymous"
   />
-
-  <style>
-    :root {
-      --primary-color: #0d6efd;
-      --dark-color: #0f172a;
-      --text-muted-custom: #6b7280;
-    }
-
-    body {
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background: #f8fafc;
-      color: #1f2937;
-    }
-
-    .hero-section {
-      background: linear-gradient(135deg, #0d6efd 0%, #0b5ed7 50%, #0a58ca 100%);
-      color: #fff;
-      border-radius: 1rem;
-    }
-
-    .profile-img {
-      width: 100%;
-      max-width: 320px;
-      aspect-ratio: 1 / 1;
-      object-fit: cover;
-      border-radius: 1rem;
-      border: 4px solid rgba(255, 255, 255, 0.2);
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
-      background: #e5e7eb;
-    }
-
-    .info-card {
-      border: 0;
-      border-radius: 1rem;
-      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
-    }
-
-    .section-title {
-      font-weight: 700;
-      color: var(--dark-color);
-    }
-
-    .lead-text {
-      color: #e5edff;
-    }
-
-    .custom-muted {
-      color: var(--text-muted-custom);
-    }
-
-    .video-wrapper iframe {
-      width: 100%;
-      min-height: 240px;
-      border: 0;
-      border-radius: 0.75rem;
-    }
-
-    footer {
-      background: #0f172a;
-      color: #e2e8f0;
-    }
-  </style>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <!-- HEADER -->
   <header>
-    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
       <div class="container">
-        <a class="navbar-brand fw-bold" href="#">Kerem</a>
+        <a class="navbar-brand fw-bold" href="index.html">Kerem</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -96,24 +32,22 @@
 
         <div class="collapse navbar-collapse" id="mainNavbar">
           <ul class="navbar-nav flex-column flex-lg-row ms-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Hakkında</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Özgeçmiş</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Şehrim</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">İlgi Alanlarım</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">İletişim</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Hakkında</a></li>
+            <li class="nav-item"><a class="nav-link" href="ozgecmis.html">Özgeçmiş</a></li>
+            <li class="nav-item"><a class="nav-link" href="sehrim.html">Şehrim</a></li>
+            <li class="nav-item"><a class="nav-link" href="ilgi-alanlarim.html">İlgi Alanlarım</a></li>
+            <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
+            <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
           </ul>
         </div>
       </div>
     </nav>
   </header>
 
-  <!-- MAIN -->
   <main class="container my-4 my-md-5">
-    <!-- HAKKINDA HERO -->
     <section class="hero-section p-4 p-md-5 mb-4 mb-md-5">
       <div class="row align-items-center g-4">
-        <div class="col-lg-8">
+        <div class="col-12 text-center text-md-start">
           <h1 class="display-5 fw-bold mb-3">Merhaba, ben Kerem.</h1>
           <p class="lead lead-text mb-3">
             Bilgisayar Mühendisliği öğrencisiyim ve kendimi hem yazılım geliştirme hem de disiplinli yaşam
@@ -124,13 +58,9 @@
             önemli olduğuna inanıyorum. Bu sayfa, beni daha yakından tanımanız için hazırlandı.
           </p>
         </div>
-        <div class="col-lg-4 text-center">
-          <img src="assets/profil.jpg" alt="Kerem profil fotoğrafı" class="profile-img img-fluid" />
-        </div>
       </div>
     </section>
 
-    <!-- PROFESYONEL TANITIM -->
     <section class="mb-4 mb-md-5">
       <div class="card info-card">
         <div class="card-body p-4 p-md-5">
@@ -146,7 +76,6 @@
       </div>
     </section>
 
-    <!-- HOBILER -->
     <section class="mb-4 mb-md-5">
       <div class="row g-4">
         <div class="col-md-6">
@@ -176,7 +105,6 @@
       </div>
     </section>
 
-    <!-- YOUTUBE EMBED -->
     <section>
       <h2 class="section-title h3 mb-3">İlgi Alanlarımdan Videolar</h2>
       <div class="row g-4 video-wrapper">
@@ -197,8 +125,8 @@
           <div class="card info-card">
             <div class="card-body p-3">
               <iframe
-                src="https://www.youtube.com/embed/7g1pmHSWHe0"
-                title="Motosiklet inceleme ve sürüş videosu"
+                src="https://www.youtube.com/embed/9-El5uO7x00"
+                title="KTM Duke 250 (2024) İnceleme Videosu"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen
               ></iframe>
@@ -209,7 +137,6 @@
     </section>
   </main>
 
-  <!-- FOOTER -->
   <footer class="py-4 mt-5">
     <div class="container text-center">
       <small>&copy; 2026 Kerem - Tüm Hakları Saklıdır.</small>
@@ -221,5 +148,6 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"
   ></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
