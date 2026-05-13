@@ -320,3 +320,23 @@ footer {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
+
+/* Kartlar için Hover (Üzerine Gelme) Efekti */
+.info-card {
+  transition: all 0.3s ease-in-out;
+}
+
+.info-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.15) !important;
+}
+
+/* Navbar Linkleri İçin Ufak Bir Efekt */
+.navbar-nav .nav-link {
+  transition: color 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f8f9fa !important;
+  opacity: 0.8;
+}
