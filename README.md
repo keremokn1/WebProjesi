@@ -1,5 +1,7 @@
 Web Teknolojileri Projesi - Kişisel Portfolyo
 
+**Proje Durumu:** Sürüm 1.0 (Teslime Hazır) ✅
+
 Bu proje, Sakarya Üniversitesi Bilgisayar Mühendisliği bölümü Web Teknolojileri dersi kapsamında geliştirilmiş, modern web standartlarına uygun, responsive (mobil uyumlu) bir kişisel web uygulamasıdır.
 🚀 Proje Hakkında
 
